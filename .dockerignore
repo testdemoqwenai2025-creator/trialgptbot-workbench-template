@@ -1,0 +1,52 @@
+# Build context exclusions — keep Docker build fast
+# Mirrors .gitignore where it matters
+
+# VCS
+.git
+.gitignore
+.gitattributes
+.github
+
+# Build artifacts
+.next
+out
+build
+dist
+*.tsbuildinfo
+
+# Dependencies (will be re-installed in the builder stage)
+node_modules
+
+# Local runtime
+download
+server.log
+dev.log
+dev.out.log
+*.log
+dev.pid
+tool-results
+.zscripts
+skills
+
+# Duplicate / nested repos (gitlinks that confuse Docker context)
+TrialGPTBoT-Enterprise
+TrialGPTBot-Enterprise
+
+# Editor / OS
+.DS_Store
+.vscode
+.idea
+*.swp
+*.swo
+
+# Env files — must be supplied at runtime
+.env
+.env.*
+!.env.example
+
+# Misc
+tests
+examples
+mini-services
+upload
+Caddyfile
