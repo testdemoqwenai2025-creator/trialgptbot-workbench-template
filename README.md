@@ -62,7 +62,9 @@ Plus: **dark theme**, **edge deployment wizard**, **back-to-home navigation**, *
 ```bash
 git clone https://github.com/testdemoqwenai2025-creator/trialgptbot-workbench-template.git
 cd trialgptbot-workbench-template
-bun install
+cp .env.example .env          # create local env file (Prisma reads .env)
+bun install                    # installs deps (also runs prisma generate via postinstall)
+bun run db:push                # creates the SQLite database (db/custom.db)
 bun run dev
 # → http://localhost:3000
 ```
