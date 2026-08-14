@@ -1,5 +1,7 @@
 # TrialGPTBot — Clinical Trial AI Workbench (Demo)
 
+![TrialGPTBot Workbench Hero](assets/hero.png)
+
 [![CI](https://github.com/testdemoqwenai2025-creator/trialgptbot-workbench-template/actions/workflows/ci.yml/badge.svg)](https://github.com/testdemoqwenai2025-creator/trialgptbot-workbench-template/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black.svg)](https://nextjs.org/)
